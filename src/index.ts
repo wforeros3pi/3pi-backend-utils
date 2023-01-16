@@ -1,6 +1,6 @@
 import * as errors from '@common/dto/enums/errors_enums';
 import * as httpUtils from '@http/interface_adapters/http_repo';
-import * as mongo from '@fnd/storage/mongo/client';
+// import * as mongo from '@fnd/storage/mongo/client';
 import { AxiosImplementation } from '@fnd/storage/axios/axios_implementation';
 
 const createInstance = () => {
@@ -13,8 +13,8 @@ const createInstance = () => {
   };
 
   const externalInterfaces = {
-    http,
-    mongo
+    http
+    // mongo
   };
   return { common, externalInterfaces, http };
 };

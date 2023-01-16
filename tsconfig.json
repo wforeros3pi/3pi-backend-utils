@@ -9,6 +9,8 @@
     "resolveJsonModule": true,
     "moduleResolution": "Node",
     "baseUrl": "./src",
+    "declaration": true,
+    "outDir": "./lib/cjs",
     "paths": {
       "@fnd/*": [
         "frameworks_and_drivers/*"
